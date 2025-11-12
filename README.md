@@ -29,7 +29,6 @@ Arquitetura Geral disponível em [`docs/Prints/Arquitetura_Projeto.png`](docs/Pr
 
 Decisões de arquitetura disponível em:
 [`docs/decisoes_arquitetura.md`](docs/decisoes_arquitetura.md).
-docs/decisoes_arquitetura.md
 
 ---
 
@@ -56,12 +55,6 @@ sptrans-lakehouse-analytics/
 - docs/                # Diagramas, prints e documentação
 - scripts/             # Scripts SQL e PowerShell
 - sql/                 # Scripts auxiliares
-
----
-
-## Automação
-
-
 
 ---
 
