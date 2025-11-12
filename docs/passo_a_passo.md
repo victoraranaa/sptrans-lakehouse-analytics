@@ -2,8 +2,8 @@
 
 Documentos complementares
 
-- [Decisões de Arquitetura](decisoes_de_arquitetura.md): explicação das ferramentas utilizadas e principais trade-offs.  
-- [Catálogo de Metadados](catalogo_metadados.md): descrição das camadas, tabelas e campos do data lake.
+- [Decisões de Arquitetura](decisoes_arquitetura.md): explicação das ferramentas utilizadas e principais trade-offs.  
+- [Catálogo de Metadados](Catalogo_metadados.md): descrição das camadas, tabelas e campos do data lake.
 
 ## 1. Objetivo Geral
 
