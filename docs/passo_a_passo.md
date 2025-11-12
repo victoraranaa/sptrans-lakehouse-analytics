@@ -17,7 +17,7 @@ O pipeline foi estruturado em cinco componentes principais, conforme o diagrama 
 4. Hive + Trino** – criam um catálogo de metadados e expõem as tabelas e views SQL.
 5. Camada de Consumo** – consultas SQL e visualizações analíticas (CSV/BI).
  
-[Arquitetura do Projeto](Prints/Arquitetura_Projeto.png)
+![Arquitetura do Projeto](Prints/Arquitetura_Projeto.png)
 *Figura 1 – Arquitetura geral do SPTrans Lakehouse Analytics.*  
 (Arquivo: `docs/prints/Arquitetura_Projeto.png`)
 
