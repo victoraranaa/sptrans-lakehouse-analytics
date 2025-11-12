@@ -4,6 +4,7 @@ Documentos complementares
 
 - [Decisões de Arquitetura](decisoes_arquitetura.md): explicação das ferramentas utilizadas e principais trade-offs.  
 - [Catálogo de Metadados](Catalogo_metadados.md): descrição das camadas, tabelas e campos do data lake.
+- [Demo Pipeline](demo.md): descreve a execução completa do pipeline.
 
 ## 1. Objetivo Geral
 
