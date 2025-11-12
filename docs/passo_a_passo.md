@@ -1,5 +1,10 @@
 # Passo a Passo do Projeto – SPTrans Lakehouse Analytics
 
+Documentos complementares
+
+- [Decisões de Arquitetura](decisoes_de_arquitetura.md): explicação das ferramentas utilizadas e principais trade-offs.  
+- [Catálogo de Metadados](catalogo_metadados.md): descrição das camadas, tabelas e campos do data lake.
+
 ## 1. Objetivo Geral
 
 O projeto visa construir um pipeline de dados quase em tempo real para monitorar a frota de ônibus da cidade de São Paulo, consumindo dados da API Olho Vivo (SPTrans) e integrando com informações estáticas do GTFS (General Transit Feed Specification).  
