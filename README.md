@@ -1,4 +1,4 @@
-# 🚌 SPTrans Lakehouse Analytics
+# SPTrans Lakehouse Analytics
 
 > Pipeline de dados quase em tempo real para monitoramento da frota de ônibus da cidade de São Paulo.  
 > Desenvolvido com ferramentas open-source como NiFi, MinIO, Trino e Hive, no contexto do MBA em Engenharia de Dados.
