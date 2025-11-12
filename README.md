@@ -54,6 +54,7 @@ sptrans-lakehouse-analytics/
 ## Documentação Completa
 
 Leia o guia técnico completo com todos os passos, prints e descrições em:
+[`docs/passo_a_passo.md`](docs/passo_a_passo.md).
 docs/passo_a_passo.md
 
 ## 👨‍💻 Autor
