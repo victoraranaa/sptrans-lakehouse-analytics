@@ -62,15 +62,12 @@ sptrans-lakehouse-analytics/
 
 Leia o guia técnico completo com todos os passos, prints e descrições em:
 [`docs/passo_a_passo.md`](docs/passo_a_passo.md).
-docs/passo_a_passo.md
 
 Catálogo de metadados disponível em:
 [`docs/Catalogo_metadados.md`](docs/Catalogo_metadados.md).
-docs/Catalogo_metadados.md
 
 Decisões de arquitetura disponível em:
 [`docs/decisoes_arquitetura.md`](docs/decisoes_arquitetura.md).
-docs/decisoes_arquitetura.md
 
 
 ## 👨‍💻 Autor
