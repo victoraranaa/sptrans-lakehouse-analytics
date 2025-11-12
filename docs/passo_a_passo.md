@@ -21,10 +21,7 @@ O pipeline foi estruturado em cinco componentes principais, conforme o diagrama 
 *Figura 1 – Arquitetura geral do SPTrans Lakehouse Analytics.*  
 (Arquivo: `docs/prints/Arquitetura_Projeto.png`)
 
-Também pode-se observar a Arquitetura de todos os componentes do Projeto (Figura 2):
-
-![Arquitetura de Componentes](Diagramas/Arquitetura_Componentes.png)
-*Figura 2 – Arquitetura de todos os componentes utilizados no Projeto.*  
+Também pode-se observar a Arquitetura de todos os componentes do Projeto:
 (Arquivo: `docs/Diagramas/Arquitetura_Componentes.png`)
 
 ---
