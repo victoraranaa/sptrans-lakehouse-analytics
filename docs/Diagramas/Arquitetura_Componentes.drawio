@@ -1,0 +1,232 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="28.2.9">
+  <diagram name="Page-1" id="evz0O3_Jwe4Z0wNjoKhg">
+    <mxGraphModel dx="2908" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-68" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="-269" y="280" width="1320" height="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-64" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="-53" y="801" width="860" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-62" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="-133" y="1080" width="882" height="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-1" target="FNCG3dSTeWJYaPUHurgB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-1" value="&lt;b&gt;SPTRANS - API Olhovivo&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;API JSON&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-11" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-2" target="FNCG3dSTeWJYaPUHurgB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-2" target="FNCG3dSTeWJYaPUHurgB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-2" value="&lt;b&gt;InvokeHTTP - Olhovivo&lt;/b&gt;&lt;div&gt;&lt;b&gt;(NiFi)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Realiza chamadas periódicas à API Olhovivo&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-11" y="360" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-3" target="FNCG3dSTeWJYaPUHurgB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-3" value="&lt;b&gt;PutS3Object - Raw&lt;/b&gt;&lt;div&gt;&lt;b&gt;(NiFi)&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Grava resposta JSON bruta em lake/raw/sptrans/posição&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-11" y="562" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-5" value="&lt;div&gt;&lt;b&gt;Camada Raw&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena JSON bruto da API&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-11" y="841" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-6" target="FNCG3dSTeWJYaPUHurgB-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-6" value="&lt;div&gt;&lt;b&gt;Camada Bronze&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena JSON estruturado/consolidado&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="164" y="841" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.539;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-7" target="FNCG3dSTeWJYaPUHurgB-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="384" y="1051" />
+              <mxPoint x="567" y="1051" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-7" value="&lt;div&gt;&lt;b&gt;Camada GTFS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena routes.txt e demais arquivos GTFS&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="324" y="841" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-8" value="&lt;div&gt;&lt;b&gt;Camada Silver&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena dados tratados (ex: sptrans_posicoes_flat)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="484" y="841" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-9" value="&lt;div&gt;&lt;b&gt;Camada Gold&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Views analíticas expostas pelo Trino&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="644" y="841" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-11" target="FNCG3dSTeWJYaPUHurgB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-11" value="&lt;b&gt;PutS3Object - Bronze&lt;/b&gt;&lt;div&gt;&lt;b&gt;(NiFi)&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Grava JSON consolidado/organizado em lake/bronze/sptrans_posições&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="149" y="562" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-12" target="FNCG3dSTeWJYaPUHurgB-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-12" value="&lt;div&gt;&lt;b&gt;hive.bronze.sptrans_posicoes&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Tabela)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Lê dados da camada bronze&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="129" y="1121" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-13" target="FNCG3dSTeWJYaPUHurgB-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-13" value="&lt;div&gt;&lt;b&gt;hive.silver.vw_sptrans_posicoes_flat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(View)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Flatten das posições a partir da Bronze&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1321" width="245" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-14" target="FNCG3dSTeWJYaPUHurgB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-14" value="&lt;div&gt;&lt;b&gt;hive.silver.sptrans_posicoes_flat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Tabela)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Tabela física populada pelo script de refresh&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1522" width="245" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-15" target="FNCG3dSTeWJYaPUHurgB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-15" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;hive.silver_gtfs.routes&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Tabela)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Rotas GTFS carregadas do lake/gtfs/routes&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1522" width="217" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-16" target="FNCG3dSTeWJYaPUHurgB-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="382" y="1321" />
+              <mxPoint x="382" y="1582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-16" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;scripts/refresh_silver.ps1&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Script PowerShell)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Executa INSERT da view Silver para a tabela física&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="771" y="1261" width="245" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-17" target="FNCG3dSTeWJYaPUHurgB-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="302" y="1866" />
+              <mxPoint x="227" y="1866" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-17" target="FNCG3dSTeWJYaPUHurgB-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="479" y="1951" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="499" y="1901" />
+              <mxPoint x="499" y="1901" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-17" value="&lt;div&gt;&lt;b&gt;hive.silver.vw_sptrans_posicoes_enriquecida&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(View)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Junta posições (Silver) com rotas (GTFS)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="1721" width="275" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-18" target="FNCG3dSTeWJYaPUHurgB-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="1911" />
+              <mxPoint x="392" y="1911" />
+              <mxPoint x="392" y="2021" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-18" target="FNCG3dSTeWJYaPUHurgB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-18" value="&lt;div&gt;&lt;b&gt;SQL Client / Console Trino&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Ferramenta de consulta)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Executa queries nas views Gold&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1721" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-19" value="&lt;div&gt;&lt;b&gt;hive.gold.vw_sptrans_posicoes_ultimas&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(View)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Última posição por veículo/linha&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1961" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-20" value="&lt;div&gt;&lt;b&gt;hive.gold.vw_sptrans_linha_resumo&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(View)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Última agregado por linha&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="442" y="1961" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-27" target="FNCG3dSTeWJYaPUHurgB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-27" value="&lt;div&gt;&lt;b&gt;SPTRANS - Arquivos GTFS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;GTFS estático&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1121" y="562" width="245" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FNCG3dSTeWJYaPUHurgB-40" target="FNCG3dSTeWJYaPUHurgB-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-40" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Usuário&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Usuário do ambiente&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1262" y="1461" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-41" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1312" y="1481" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-44" value="Fornece JSON de Posição" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="49" y="220" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-45" value="Encaminha resposta bruta" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-91" y="500" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-46" value="Transforma/organiza resposta" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="229" y="463" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-47" value="Grava JSON bruto" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-91" y="701" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-48" value="Grava JSON consolidado" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="79" y="701" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-49" value="Arquivos carregados manualmente" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="439" y="581" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-50" value="Lido como tabela Bronze" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="79" y="971" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-51" value="Usado para flatten" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="229" y="1261" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-52" value="Join com GTFS Routes" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1671" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-53" value="Popula com dados da view Silver" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="409" y="1281" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-54" value="Lido como tabela GTFS Routes" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="569" y="1151" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-55" value="Executa consultas em Silver/Gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1107" y="1741" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-56" value="INSERT via script_refresh" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1461" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-57" value="Enriquecimento de rotas" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1661" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-58" value="Consulta KPIs por linha" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="889" y="1981" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-59" value="Consulta KPIs de posição atual" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="602" y="1871" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-60" value="Base para resumo por linha" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="379" y="1861" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-61" value="Base para última posição" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1881" width="120" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-63" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Trino + Hive Metastore&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;b&gt;(container)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-163" y="1040" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-65" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Minio - Data Lake&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;(bucket: Lake)&lt;br&gt;(container)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-219" y="801" width="164" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="-111" y="320" width="482" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-67" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Apache NiFi&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;(container)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-237" y="320" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FNCG3dSTeWJYaPUHurgB-69" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SPTRANS Lakehouse Analytics&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;(system)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="240" width="250" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

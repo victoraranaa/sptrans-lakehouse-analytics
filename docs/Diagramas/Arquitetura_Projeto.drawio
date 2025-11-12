@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="28.2.9">
+  <diagram name="Page-1" id="mW-gamr_gr0yq0ESwxMM">
+    <mxGraphModel dx="2058" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fMySbHOjDyezZYQgQhAV-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-1" target="fMySbHOjDyezZYQgQhAV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-1" value="&lt;div&gt;&lt;b&gt;SPTRANS - API Olho Vivo&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Fornece JSON com posição dos ônibus&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="81" y="118" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-2" target="fMySbHOjDyezZYQgQhAV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-2" value="&lt;div&gt;&lt;b&gt;Apache NiFi&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Ingestão / Orquestração&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Chama periódicamente a API Olho Vivo e grava os dados no Data Lake (raw/bronze)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="118" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-4" target="fMySbHOjDyezZYQgQhAV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-4" value="&lt;div&gt;&lt;b&gt;MiniO - Data Lake&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(bucket: Lake)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena dados por camadas: raw, bronze, gfts, silver, gold&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="321" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-5" value="Grava arquivos raw e bronze" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="261" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-7" target="fMySbHOjDyezZYQgQhAV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-7" value="&lt;div&gt;&lt;b&gt;Trino + Hive&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Lê os dados do MiniO, define tabelas/views Bronez/Silver/Gold e executa consultas SQL&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="521" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-8" target="fMySbHOjDyezZYQgQhAV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-8" value="&lt;div&gt;&lt;b&gt;SPTRANS - GFTS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(routes.txt)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Disponibiliza arquivo estático com rotas e linhas&amp;nbsp; (GFTS)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="81" y="321" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fMySbHOjDyezZYQgQhAV-9" target="fMySbHOjDyezZYQgQhAV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-9" value="&lt;div&gt;&lt;b&gt;Camada de Consumo&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(SQL Cli / CSV / Power BI)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Consome as views Gold para análise e visualizações&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="721" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-10" value="&lt;div&gt;&lt;b&gt;Usuário&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Explora os dados, valida KPIs e toma decisões de negócio&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="960" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-12" value="Consulta KPIs e resultados analíticos" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="900" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-13" value="Fornece JSON com posição dos veículos" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="246" y="81" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-14" value="Arquivo GTFS carregado para o lake&amp;nbsp;&lt;div&gt;(ingestão manual)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="251" y="341" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-17" value="Lê Raw/Bronze/GFTS ; Escreve Silver/Gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="461" width="150" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-19" value="Executa consultas nas views Silver/Gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="661" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="81" width="310" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="fMySbHOjDyezZYQgQhAV-23" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SPTRANS Lakehouse Analytics&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;(sistema)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="40" width="250" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

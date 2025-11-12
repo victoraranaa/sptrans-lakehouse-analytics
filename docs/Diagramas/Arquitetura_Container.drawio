@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="28.2.9">
+  <diagram name="Page-1" id="L11n0uUui8kDvtuX_8ve">
+    <mxGraphModel dx="2058" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="410" y="260" width="680" height="733" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="340" width="300" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-1" target="8XWBkDxIi-HI31vvgWoz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-1" target="8XWBkDxIi-HI31vvgWoz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-1" value="&lt;b&gt;Usuário do ambiente analítico&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-2" target="8XWBkDxIi-HI31vvgWoz-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-2" value="&lt;span&gt;&lt;b&gt;SQL Client / Console Trino&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Usado para executar as queries nas views Gold&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="377" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-3" target="8XWBkDxIi-HI31vvgWoz-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-3" value="&lt;span&gt;&lt;b&gt;Ferramenta de BI&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(futuro)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Power BI / etc)&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Consome dados via conexão com Trino&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="700" y="377" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-4" target="8XWBkDxIi-HI31vvgWoz-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="560" />
+              <mxPoint x="790" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-4" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Script Refresh Silver&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Executa o INSERT da view Silver lógica para a tabela física Silver&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="860" y="377" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-5" target="8XWBkDxIi-HI31vvgWoz-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="590" />
+              <mxPoint x="920" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-5" value="&lt;div&gt;&lt;b&gt;SPTRANS - Olhovivo&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;API Json com posição de veículos&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="377" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Camada de Consumo&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;b style=&quot;&quot;&gt;(container)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="180" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-14" target="8XWBkDxIi-HI31vvgWoz-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.192;entryY=0.017;entryDx=0;entryDy=0;exitX=0.858;exitY=0.983;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-14" target="8XWBkDxIi-HI31vvgWoz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-14" value="&lt;div&gt;&lt;b&gt;Trino&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Consulta os dados no MiniO via Hive, expõe Bronze/Silver/Gold como tabelas/views&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="700" y="620" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-15" target="8XWBkDxIi-HI31vvgWoz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-15" value="&lt;div&gt;&lt;b&gt;Trino&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Consulta os dados no MiniO via Hive, expõe Bronze/Silver/Gold como tabelas/views&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="860" y="620" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8XWBkDxIi-HI31vvgWoz-16" target="8XWBkDxIi-HI31vvgWoz-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-16" value="&lt;div&gt;&lt;b&gt;SPTRANS - Aquivos GTFS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Arquivos GTFS com rotas estáticas&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="620" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-17" value="&lt;div&gt;&lt;b&gt;Hive Metastore&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Catálogo de schemas e tabelas lidos pelo Trino&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="820" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-18" value="&lt;div&gt;&lt;b&gt;MiniO - Data Lake&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Armazena os dados organizados em camadas:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;raw, bronze, gtfs, silver, gold&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="780" y="820" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-29" value="Consulta dados e KPIs" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="210" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-30" value="Visualiza dashboards&lt;div&gt;(quando disponível)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="210" width="130" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-31" value="Executa consultas nas views Silver/Gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="200" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-32" value="Executa consultas nas views Silver/Gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="517" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-34" value="Fornece dados JSON de posição" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="533" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-35" value="Arquivos GTFS carregados manualmente para o Data Lake" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="890" width="180" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-36" value="Consulta metadados de tabelas e schemas" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="750" width="200" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-37" value="Lê/grava dados nas camadas silver/gold" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="750" width="130" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-38" value="Grava arquivos raw/bronze (JSON)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="960" y="780" width="110" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="8XWBkDxIi-HI31vvgWoz-39" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SPTRANS Lakehouse Analytics&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;(sistema)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="250" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,32 @@
+# Credenciais e variáveis de ambiente
+.env
+*.env
+*.cookie
+*.key
+*.pem
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+~$*
+
+# Saídas locais/ide
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dados / artefatos que NÃO devem ir pro git
+# (NÃO versionar dados do lake, metastore local, dumps, etc.)
+lake/
+data/
+warehouse/
+metastore_db/
+*/__pycache__/
+*.parquet
+*.orc
+*.csv.zip
+
+# Prints/diagramas gerados automaticamente (se forem mt pesados, mantenha só os finais)
+docs/prints/raw/
