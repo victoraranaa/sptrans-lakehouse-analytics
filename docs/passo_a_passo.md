@@ -35,11 +35,11 @@ O fluxo principal é composto pelos seguintes processadores:
 | `PutS3Object (Raw)` - Grava a resposta bruta no bucket `lake/raw/sptrans/posicao/` - Saída: Arquivo bruto |
 | `PutS3Object (Bronze)` - Grava JSON consolidado em `lake/bronze/sptrans_posicoes/` - Saída: Arquivo estruturado |
 
-![Fluxo do NiFi](NiFi_Flow.png)
+![Fluxo do NiFi](docs/prints/nifi_flow.png)
 *Fluxo NiFi completo mostrando os processadores.*  
 (Arquivo: `docs/prints/nifi_flow.png`)
 
-![NiFi - Config do PutS3Object (raw)](NiFi_puts3_config.png)
+![NiFi - Config do PutS3Object (raw)](docs/prints/nifi_puts3_config.png)
 *Exemplo da configuração do PutS3Object (raw) apontando para o bucket MinIO.*  
 (Arquivo: `docs/prints/nifi_puts3_config.png`)
 
@@ -72,7 +72,7 @@ Cada pasta representa uma camada lógica de maturidade dos dados:
   Origem: Views SQL analíticas. 
   Finalidade: Indicadores e KPIs consolidados. |
 
-![Bucket 'Lake'](MiniO_bucket.png)
+![Bucket 'Lake'](docs/prints/minio_bucket.png)
 Visualização do bucket lake no painel do MinIO com as pastas Raw, Bronze, GTFS, Silver e Gold.
 (Arquivo: `docs/prints/minio_bucket.png`)
 
@@ -98,7 +98,7 @@ A carga da tabela física é executada por meio do script:
 
 Esse processo simula a automação de um job recorrente (por exemplo, via agendador do sistema operacional ou ferramenta de orquestração), garantindo que a camada Silver seja atualizada a partir dos dados coletados pelo NiFi.
 
-![Refresh Silver](powershell_refresh_silver.png)
+![Refresh Silver](docs/prints/powershell_refresh_silver.png)
 *Execução do script `refresh_silver.ps1` com inserção de registros na tabela Silver.*  
 (Arquivo: `docs/prints/powershell_refresh_silver.png`)
 
@@ -146,7 +146,7 @@ Essas visões simplificam o consumo de informações e servem como base direta p
 Arquivos relacionados:
 - `sql/create_views_gold.sql` – contém as definições das views da camada Gold.
 
-![Trino_gold_resumo](trino_gold_resumo.png)
+![Trino_gold_resumo](docs/prints/trino_gold_resumo.png)
 - `docs/prints/trino_gold_resumo.png` – resultado da view `vw_sptrans_linha_resumo`.
 
 
@@ -176,13 +176,13 @@ Essas consultas demonstram, de forma prática, o valor da arquitetura proposta, 
 Arquivos relacionados:
 - `sql/queries_kpi.sql` – contém todas as consultas analíticas utilizadas para os KPIs.
 
-![KPI Frota por Linha](trino_kpi_frota_por_linha.png)
+![KPI Frota por Linha](docs/prints/trino_kpi_frota_por_linha.png)
 - `docs/prints/trino_kpi_frota_por_linha.png` – KPI 1.
 
-![KPI Top Linhas](trino_kpi_top_linhas.png)
+![KPI Top Linhas](docs/prints/trino_kpi_top_linhas.png)
 - `docs/prints/trino_kpi_top_linhas.png` – KPI 2.
 
-![KPI Evolucao Temporal](trino_kpi_evolucao_temporal_veiculos.png)
+![KPI Evolucao Temporal](docs/prints/trino_kpi_evolucao_temporal_veiculos.png)
 - `docs/prints/trino_kpi_evolucao_temporal_veiculos.png` – KPI 3.
 
 
