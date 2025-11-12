@@ -69,6 +69,9 @@ Catálogo de metadados disponível em:
 Decisões de arquitetura disponível em:
 [`docs/decisoes_arquitetura.md`](docs/decisoes_arquitetura.md).
 
+Descrição do Pipeline disponível em:
+[`docs/demo.md`](docs/demo.md).
+
 
 ## 👨‍💻 Autor
 
