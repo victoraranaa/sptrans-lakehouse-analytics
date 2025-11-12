@@ -35,11 +35,11 @@ O fluxo principal é composto pelos seguintes processadores:
 | `PutS3Object (Raw)` - Grava a resposta bruta no bucket `lake/raw/sptrans/posicao/` - Saída: Arquivo bruto |
 | `PutS3Object (Bronze)` - Grava JSON consolidado em `lake/bronze/sptrans_posicoes/` - Saída: Arquivo estruturado |
 
-![Fluxo do NiFi](Prints/nifi_flow.png)
+![Fluxo do NiFi](Prints/NiFi_Flow.png)
 *Fluxo NiFi completo mostrando os processadores.*  
 (Arquivo: `docs/prints/nifi_flow.png`)
 
-![NiFi - Config do PutS3Object (raw)](Prints/nifi_puts3_config.png)
+![NiFi - Config do PutS3Object (raw)](Prints/NiFi_puts3_config.png)
 *Exemplo da configuração do PutS3Object (raw) apontando para o bucket MinIO.*  
 (Arquivo: `docs/prints/nifi_puts3_config.png`)
 
@@ -72,7 +72,7 @@ Cada pasta representa uma camada lógica de maturidade dos dados:
   Origem: Views SQL analíticas. 
   Finalidade: Indicadores e KPIs consolidados. |
 
-![Bucket 'Lake'](Prints/minio_bucket.png)
+![Bucket 'Lake'](Prints/MiniO_bucket.png)
 Visualização do bucket lake no painel do MinIO com as pastas Raw, Bronze, GTFS, Silver e Gold.
 (Arquivo: `docs/prints/minio_bucket.png`)
 
