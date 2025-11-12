@@ -22,7 +22,7 @@ O pipeline foi estruturado em cinco componentes principais, conforme o diagrama 
 (Arquivo: `docs/prints/Arquitetura_Projeto.png`)
 
 Também pode-se observar a Arquitetura de todos os componentes do Projeto:
-(Arquivo: `docs/Diagramas/Arquitetura_Componentes.png`)
+(Arquivo: `docs/Diagramas/Arquitetura_Componentes.drawio`)
 
 ---
 
