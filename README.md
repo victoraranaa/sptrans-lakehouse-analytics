@@ -9,9 +9,10 @@
 
 Demonstrar a aplicação de conceitos de **Engenharia de Dados** em uma arquitetura **Lakehouse**, integrando:
 
-- Dados dinâmicos da **API Olho Vivo (SPTrans)**  
-- Dados estáticos do **GTFS (routes.txt)**  
-- Processamento em camadas **Raw → Bronze → Silver → Gold**
+- Dados dinâmicos da API Olho Vivo (SPTrans)  
+- Dados estáticos do GTFS (routes.txt)  
+- Processamento em camadas **Raw → Bronze → Silver → Gold
+- Consultas SQL e indicadores analíticos em tempo quase real 
 
 ---
 
@@ -22,8 +23,13 @@ Arquitetura Geral disponível em [`docs/Prints/Arquitetura_Projeto.png`](docs/Pr
 **Principais componentes:**
 1. **Apache NiFi** – ingestão periódica da API e gravação no MinIO  
 2. **MinIO** – armazenamento em camadas do Data Lake  
-3. **Hive + Trino** – catálogo e engine SQL para consultas  
-4. **Camada de Consumo** – geração de KPIs e visualização analítica  
+3. **Hive + Trino** – catálogo e engine SQL para consultas
+4. **GTFS** - Enriquecimento dos dados com informações estáticas das rotas
+5. **Camada de Consumo** – geração de KPIs e visualização analítica
+
+Decisões de arquitetura disponível em:
+[`docs/decisoes_arquitetura.md`](docs/decisoes_arquitetura.md).
+docs/decisoes_arquitetura.md
 
 ---
 
@@ -46,16 +52,33 @@ Esse processo materializa os dados limpos na tabela hive.silver.sptrans_posicoes
 
 Estrutura do Repositório
 sptrans-lakehouse-analytics/
-├── docker/              # Containers e ambiente local
-├── docs/                # Diagramas, prints e documentação
-├── scripts/             # Scripts SQL e PowerShell
-└── sql/                 # Scripts auxiliares
+- docker/              # Containers e ambiente local
+- docs/                # Diagramas, prints e documentação
+- scripts/             # Scripts SQL e PowerShell
+- sql/                 # Scripts auxiliares
+
+---
+
+## Automação
+
+
+
+---
 
 ## Documentação Completa
 
 Leia o guia técnico completo com todos os passos, prints e descrições em:
 [`docs/passo_a_passo.md`](docs/passo_a_passo.md).
 docs/passo_a_passo.md
+
+Catálogo de metadados disponível em:
+[`docs/Catalogo_metadados.md`](docs/Catalogo_metadados.md).
+docs/Catalogo_metadados.md
+
+Decisões de arquitetura disponível em:
+[`docs/decisoes_arquitetura.md`](docs/decisoes_arquitetura.md).
+docs/decisoes_arquitetura.md
+
 
 ## 👨‍💻 Autor
 
