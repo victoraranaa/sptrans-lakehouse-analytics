@@ -1,0 +1,23 @@
+{
+  "writerVersion" : "448",
+  "owner" : "trino",
+  "tableType" : "VIRTUAL_VIEW",
+  "dataColumns" : [ {
+    "name" : "dummy",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ ],
+  "parameters" : {
+    "comment" : "Presto View",
+    "presto_view" : "true",
+    "trino_created_by" : "Trino Hive connector",
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_004554_00013_n3g7z"
+  },
+  "originalStorageFormat" : { },
+  "serdeParameters" : { },
+  "viewOriginalText" : "/* Presto View: eyJvcmlnaW5hbFNxbCI6IldJVEhcbiAgcmFua2VkIEFTIChcbiAgIFNFTEVDVFxuICAgICAqXG4gICAsIHJvd19udW1iZXIoKSBPVkVSIChQQVJUSVRJT04gQlkgbGluaGFfY29kaWdvLCB2ZWljX3ByZWZpeG8gT1JERVIgQlkgdmVpY190c191dGMgREVTQykgcm5cbiAgIEZST01cbiAgICAgaGl2ZS5zcHRyYW5zLnNpbHZlcl9wb3NpY29lc1xuKSBcblNFTEVDVFxuICBoclxuLCBsaW5oYV9jb2RpZ29fY3VydG9cbiwgbGluaGFfY29kaWdvXG4sIHNlbnRpZG9cbiwgbHQwXG4sIGx0MVxuLCBxdlxuLCB2ZWljX3ByZWZpeG9cbiwgdmVpY19hY2Vzc2liaWxpZGFkZVxuLCB2ZWljX3RzX3V0Y1xuLCB2ZWljX2xhdFxuLCB2ZWljX2xvblxuLCB2ZWljX3NlbnRpZG9fc3RyXG4sIHZlaWNfc3RhdHVzXG4sIGR0XG4sIGhoXG5GUk9NXG4gIHJhbmtlZFxuV0hFUkUgKHJuID0gMSlcbiIsImNvbHVtbnMiOlt7Im5hbWUiOiJociIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoibGluaGFfY29kaWdvX2N1cnRvIiwidHlwZSI6InZhcmNoYXIifSx7Im5hbWUiOiJsaW5oYV9jb2RpZ28iLCJ0eXBlIjoiaW50ZWdlciJ9LHsibmFtZSI6InNlbnRpZG8iLCJ0eXBlIjoiaW50ZWdlciJ9LHsibmFtZSI6Imx0MCIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoibHQxIiwidHlwZSI6InZhcmNoYXIifSx7Im5hbWUiOiJxdiIsInR5cGUiOiJpbnRlZ2VyIn0seyJuYW1lIjoidmVpY19wcmVmaXhvIiwidHlwZSI6ImludGVnZXIifSx7Im5hbWUiOiJ2ZWljX2FjZXNzaWJpbGlkYWRlIiwidHlwZSI6ImJvb2xlYW4ifSx7Im5hbWUiOiJ2ZWljX3RzX3V0YyIsInR5cGUiOiJ0aW1lc3RhbXAoMykifSx7Im5hbWUiOiJ2ZWljX2xhdCIsInR5cGUiOiJkb3VibGUifSx7Im5hbWUiOiJ2ZWljX2xvbiIsInR5cGUiOiJkb3VibGUifSx7Im5hbWUiOiJ2ZWljX3NlbnRpZG9fc3RyIiwidHlwZSI6InZhcmNoYXIifSx7Im5hbWUiOiJ2ZWljX3N0YXR1cyIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoiZHQiLCJ0eXBlIjoiZGF0ZSJ9LHsibmFtZSI6ImhoIiwidHlwZSI6InZhcmNoYXIifV0sIm93bmVyIjoidHJpbm8iLCJydW5Bc0ludm9rZXIiOmZhbHNlLCJwYXRoIjpbXX0= */",
+  "viewExpandedText" : "/* Presto View */",
+  "columnStatistics" : { }
+}

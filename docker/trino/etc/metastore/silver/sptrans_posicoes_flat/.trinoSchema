@@ -1,0 +1,71 @@
+{
+  "writerVersion" : "448",
+  "owner" : "admin",
+  "tableType" : "EXTERNAL_TABLE",
+  "dataColumns" : [ {
+    "name" : "dt_ingest",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "hora_ref",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_id",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "sentido",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "terminal_origem",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "terminal_destino",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "qtde_veiculos",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "prefixo_veiculo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "em_operacao",
+    "type" : "boolean",
+    "properties" : { }
+  }, {
+    "name" : "ts_posicao",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "latitude",
+    "type" : "double",
+    "properties" : { }
+  }, {
+    "name" : "longitude",
+    "type" : "double",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251109_210814_00055_fixax",
+    "transactional" : "false",
+    "auto.purge" : "false",
+    "EXTERNAL" : "TRUE",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/silver/sptrans_posicoes_flat/",
+  "columnStatistics" : { }
+}

@@ -1,0 +1,83 @@
+{
+  "writerVersion" : "448",
+  "owner" : "trino",
+  "tableType" : "EXTERNAL_TABLE",
+  "dataColumns" : [ {
+    "name" : "hr",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo_curto",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "sentido",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "lt0",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt1",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "qv",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "veic_prefixo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "veic_acessibilidade",
+    "type" : "boolean",
+    "properties" : { }
+  }, {
+    "name" : "veic_ts_utc",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "veic_lat",
+    "type" : "double",
+    "properties" : { }
+  }, {
+    "name" : "veic_lon",
+    "type" : "double",
+    "properties" : { }
+  }, {
+    "name" : "veic_sentido_str",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "veic_status",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ {
+    "name" : "dt",
+    "type" : "date",
+    "properties" : { }
+  }, {
+    "name" : "hh",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_002745_00011_n3g7z",
+    "transactional" : "false",
+    "auto.purge" : "false",
+    "EXTERNAL" : "TRUE",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/silver/posicoes/",
+  "columnStatistics" : { }
+}

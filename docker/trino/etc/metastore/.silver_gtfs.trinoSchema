@@ -1,0 +1,9 @@
+{
+  "writerVersion" : "448",
+  "location" : "s3a://lake/gtfs/",
+  "ownerName" : "admin",
+  "ownerType" : "USER",
+  "parameters" : {
+    "trino_query_id" : "20251109_220300_00071_fixax"
+  }
+}

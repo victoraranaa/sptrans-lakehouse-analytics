@@ -1,0 +1,9 @@
+{
+  "writerVersion" : "448",
+  "location" : "s3a://lake/gold/",
+  "ownerName" : "admin",
+  "ownerType" : "USER",
+  "parameters" : {
+    "trino_query_id" : "20251106_030448_00012_ecmrv"
+  }
+}

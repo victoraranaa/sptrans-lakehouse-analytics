@@ -1,0 +1,167 @@
+{
+  "columns" : [ {
+    "name" : "hr",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo_curto",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "sentido",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "lt0",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt1",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "qv",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "veic_prefixo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "veic_acessibilidade",
+    "type" : "boolean",
+    "properties" : { }
+  }, {
+    "name" : "veic_ts_utc",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "veic_lat",
+    "type" : "double",
+    "properties" : { }
+  }, {
+    "name" : "veic_lon",
+    "type" : "double",
+    "properties" : { }
+  }, {
+    "name" : "veic_sentido_str",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "veic_status",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_002745_00011_n3g7z",
+    "numFiles" : "1",
+    "numRows" : "2",
+    "rawDataSize" : "247",
+    "totalSize" : "2645",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/silver/posicoes/dt=2025-10-29/hh=01",
+  "columnStatistics" : {
+    "veic_prefixo" : {
+      "integerStatistics" : {
+        "min" : 31163,
+        "max" : 31198
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 2
+    },
+    "qv" : {
+      "integerStatistics" : {
+        "min" : 2,
+        "max" : 2
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_lat" : {
+      "doubleStatistics" : {
+        "min" : -23.55182775,
+        "max" : -23.5397975
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 2
+    },
+    "veic_sentido_str" : {
+      "maxValueSizeInBytes" : 0,
+      "nullsCount" : 2,
+      "distinctValuesCount" : 1
+    },
+    "lt1" : {
+      "maxValueSizeInBytes" : 13,
+      "averageColumnLength" : 13.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "linha_codigo_curto" : {
+      "maxValueSizeInBytes" : 7,
+      "averageColumnLength" : 7.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "lt0" : {
+      "maxValueSizeInBytes" : 21,
+      "averageColumnLength" : 21.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "hr" : {
+      "maxValueSizeInBytes" : 5,
+      "averageColumnLength" : 5.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_acessibilidade" : {
+      "booleanStatistics" : {
+        "trueCount" : 2,
+        "falseCount" : 0
+      },
+      "nullsCount" : 0
+    },
+    "veic_status" : {
+      "maxValueSizeInBytes" : 2,
+      "averageColumnLength" : 2.0,
+      "nullsCount" : 1,
+      "distinctValuesCount" : 2
+    },
+    "sentido" : {
+      "integerStatistics" : {
+        "min" : 1,
+        "max" : 1
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_ts_utc" : {
+      "nullsCount" : 0,
+      "distinctValuesCount" : 2
+    },
+    "linha_codigo" : {
+      "integerStatistics" : {
+        "min" : 2160,
+        "max" : 2160
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_lon" : {
+      "doubleStatistics" : {
+        "min" : -46.609817,
+        "max" : -46.4618125
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 2
+    }
+  }
+}

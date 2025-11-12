@@ -1,0 +1,31 @@
+{
+  "columns" : [ {
+    "name" : "hr",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "l",
+    "type" : "array<struct<c:string,cl:int,sl:int,lt0:string,lt1:string,qv:int,vs:array<struct<p:int,a:boolean,ta:timestamp,py:double,px:double,sv:string,status:string>>>>",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_000407_00001_n3g7z",
+    "numFiles" : "1",
+    "numRows" : "1",
+    "rawDataSize" : "179",
+    "totalSize" : "2560",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/raw/posicoes/dt=2025-10-29/hh=01",
+  "columnStatistics" : {
+    "hr" : {
+      "maxValueSizeInBytes" : 5,
+      "averageColumnLength" : 5.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "writerVersion" : "448",
+  "owner" : "trino",
+  "tableType" : "EXTERNAL_TABLE",
+  "dataColumns" : [ {
+    "name" : "hr",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "l",
+    "type" : "array<struct<c:string,cl:int,sl:int,lt0:string,lt1:string,qv:int,vs:array<struct<p:int,a:boolean,ta:timestamp,py:double,px:double,sv:string,status:string>>>>",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ {
+    "name" : "dt",
+    "type" : "date",
+    "properties" : { }
+  }, {
+    "name" : "hh",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_000354_00000_n3g7z",
+    "transactional" : "false",
+    "auto.purge" : "false",
+    "EXTERNAL" : "TRUE",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/raw/posicoes/",
+  "columnStatistics" : { }
+}

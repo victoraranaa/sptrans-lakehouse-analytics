@@ -1,0 +1,59 @@
+{
+  "writerVersion" : "448",
+  "owner" : "trino",
+  "tableType" : "EXTERNAL_TABLE",
+  "dataColumns" : [ {
+    "name" : "linha_codigo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo_curto",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt0",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt1",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "veic_registros",
+    "type" : "bigint",
+    "properties" : { }
+  }, {
+    "name" : "veic_distintos",
+    "type" : "bigint",
+    "properties" : { }
+  }, {
+    "name" : "ts_min",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "ts_max",
+    "type" : "timestamp",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ {
+    "name" : "dt",
+    "type" : "date",
+    "properties" : { }
+  }, {
+    "name" : "hh",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_004613_00016_n3g7z",
+    "transactional" : "false",
+    "auto.purge" : "false",
+    "EXTERNAL" : "TRUE",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/gold/kpi_linha_hora/",
+  "columnStatistics" : { }
+}

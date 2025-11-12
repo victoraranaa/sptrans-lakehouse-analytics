@@ -1,0 +1,4 @@
+﻿services:
+  hive-metastore:
+    entrypoint: null
+    command: null

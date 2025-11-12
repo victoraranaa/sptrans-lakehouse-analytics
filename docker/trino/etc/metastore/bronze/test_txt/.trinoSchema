@@ -1,0 +1,23 @@
+{
+  "writerVersion" : "448",
+  "owner" : "admin",
+  "tableType" : "EXTERNAL_TABLE",
+  "dataColumns" : [ {
+    "name" : "line",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251109_193652_00014_fixax",
+    "transactional" : "false",
+    "auto.purge" : "false",
+    "EXTERNAL" : "TRUE",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "TEXTFILE",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/bronze/test_txt/",
+  "columnStatistics" : { }
+}

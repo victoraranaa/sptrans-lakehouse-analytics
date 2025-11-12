@@ -1,0 +1,23 @@
+{
+  "writerVersion" : "448",
+  "owner" : "admin",
+  "tableType" : "VIRTUAL_VIEW",
+  "dataColumns" : [ {
+    "name" : "dummy",
+    "type" : "string",
+    "properties" : { }
+  } ],
+  "partitionColumns" : [ ],
+  "parameters" : {
+    "comment" : "Presto View",
+    "presto_view" : "true",
+    "trino_created_by" : "Trino Hive connector",
+    "trino_version" : "448",
+    "trino_query_id" : "20251111_221556_00006_r8dbf"
+  },
+  "originalStorageFormat" : { },
+  "serdeParameters" : { },
+  "viewOriginalText" : "/* Presto View: eyJvcmlnaW5hbFNxbCI6IlNFTEVDVFxuICBwLmR0X2luZ2VzdFxuLCBwLnRzX3Bvc2ljYW9cbiwgcC5ob3JhX3JlZlxuLCBwLmxpbmhhX2NvZGlnb1xuLCByLnJvdXRlX3Nob3J0X25hbWVcbiwgci5yb3V0ZV9sb25nX25hbWVcbiwgcC5saW5oYV9pZFxuLCBwLnNlbnRpZG9cbiwgcC50ZXJtaW5hbF9vcmlnZW1cbiwgcC50ZXJtaW5hbF9kZXN0aW5vXG4sIHAucXRkZV92ZWljdWxvc1xuLCBwLnByZWZpeG9fdmVpY3Vsb1xuLCBwLmVtX29wZXJhY2FvXG4sIHAubGF0aXR1ZGVcbiwgcC5sb25naXR1ZGVcbkZST01cbiAgKGhpdmUuc2lsdmVyLnNwdHJhbnNfcG9zaWNvZXNfZmxhdCBwXG5MRUZUIEpPSU4gaGl2ZS5zaWx2ZXJfZ3Rmcy5yb3V0ZXMgciBPTiAoci5yb3V0ZV9zaG9ydF9uYW1lID0gcC5saW5oYV9jb2RpZ28pKVxuIiwiY29sdW1ucyI6W3sibmFtZSI6ImR0X2luZ2VzdCIsInR5cGUiOiJ0aW1lc3RhbXAoMykifSx7Im5hbWUiOiJ0c19wb3NpY2FvIiwidHlwZSI6InRpbWVzdGFtcCgzKSJ9LHsibmFtZSI6ImhvcmFfcmVmIiwidHlwZSI6InZhcmNoYXIifSx7Im5hbWUiOiJsaW5oYV9jb2RpZ28iLCJ0eXBlIjoidmFyY2hhciJ9LHsibmFtZSI6InJvdXRlX3Nob3J0X25hbWUiLCJ0eXBlIjoidmFyY2hhciJ9LHsibmFtZSI6InJvdXRlX2xvbmdfbmFtZSIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoibGluaGFfaWQiLCJ0eXBlIjoiaW50ZWdlciJ9LHsibmFtZSI6InNlbnRpZG8iLCJ0eXBlIjoiaW50ZWdlciJ9LHsibmFtZSI6InRlcm1pbmFsX29yaWdlbSIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoidGVybWluYWxfZGVzdGlubyIsInR5cGUiOiJ2YXJjaGFyIn0seyJuYW1lIjoicXRkZV92ZWljdWxvcyIsInR5cGUiOiJpbnRlZ2VyIn0seyJuYW1lIjoicHJlZml4b192ZWljdWxvIiwidHlwZSI6ImludGVnZXIifSx7Im5hbWUiOiJlbV9vcGVyYWNhbyIsInR5cGUiOiJib29sZWFuIn0seyJuYW1lIjoibGF0aXR1ZGUiLCJ0eXBlIjoiZG91YmxlIn0seyJuYW1lIjoibG9uZ2l0dWRlIiwidHlwZSI6ImRvdWJsZSJ9XSwib3duZXIiOiJhZG1pbiIsInJ1bkFzSW52b2tlciI6ZmFsc2UsInBhdGgiOltdfQ== */",
+  "viewExpandedText" : "/* Presto View */",
+  "columnStatistics" : { }
+}

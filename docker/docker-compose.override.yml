@@ -1,0 +1,13 @@
+﻿services:
+  hive-metastore:
+    entrypoint: ["/bin/bash","-lc"]
+    command: |
+      set -e
+      echo "[metastore] normalizando LF do hive-site.xml..."
+      sed -i 's/\r$//' /opt/hive/conf/hive-site.xml || true
+
+      echo "[metastore] init schema idempotente..."
+      /opt/hive/bin/schematool -dbType postgres -initSchema || true
+
+      echo "[metastore] iniciando thrift 9083..."
+      exec /opt/hive/bin/hive --service metastore -p 9083

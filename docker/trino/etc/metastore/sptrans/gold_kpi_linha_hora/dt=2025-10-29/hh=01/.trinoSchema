@@ -1,0 +1,99 @@
+{
+  "columns" : [ {
+    "name" : "linha_codigo",
+    "type" : "int",
+    "properties" : { }
+  }, {
+    "name" : "linha_codigo_curto",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt0",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "lt1",
+    "type" : "string",
+    "properties" : { }
+  }, {
+    "name" : "veic_registros",
+    "type" : "bigint",
+    "properties" : { }
+  }, {
+    "name" : "veic_distintos",
+    "type" : "bigint",
+    "properties" : { }
+  }, {
+    "name" : "ts_min",
+    "type" : "timestamp",
+    "properties" : { }
+  }, {
+    "name" : "ts_max",
+    "type" : "timestamp",
+    "properties" : { }
+  } ],
+  "parameters" : {
+    "trino_version" : "448",
+    "trino_query_id" : "20251103_004613_00016_n3g7z",
+    "numFiles" : "1",
+    "numRows" : "1",
+    "rawDataSize" : "97",
+    "totalSize" : "1617",
+    "STATS_GENERATED_VIA_STATS_TASK" : "workaround for potential lack of HIVE-12730"
+  },
+  "storageFormat" : "PARQUET",
+  "serdeParameters" : { },
+  "externalLocation" : "s3://lake/sptrans/gold/kpi_linha_hora/dt=2025-10-29/hh=01",
+  "columnStatistics" : {
+    "ts_min" : {
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "ts_max" : {
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "linha_codigo_curto" : {
+      "maxValueSizeInBytes" : 7,
+      "averageColumnLength" : 7.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "lt1" : {
+      "maxValueSizeInBytes" : 13,
+      "averageColumnLength" : 13.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "linha_codigo" : {
+      "integerStatistics" : {
+        "min" : 2160,
+        "max" : 2160
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "lt0" : {
+      "maxValueSizeInBytes" : 21,
+      "averageColumnLength" : 21.0,
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_distintos" : {
+      "integerStatistics" : {
+        "min" : 2,
+        "max" : 2
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    },
+    "veic_registros" : {
+      "integerStatistics" : {
+        "min" : 2,
+        "max" : 2
+      },
+      "nullsCount" : 0,
+      "distinctValuesCount" : 1
+    }
+  }
+}
