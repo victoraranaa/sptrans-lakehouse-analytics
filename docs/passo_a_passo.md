@@ -18,9 +18,10 @@ O pipeline foi estruturado em cinco componentes principais, conforme o diagrama 
 5. Camada de Consumo** – consultas SQL e visualizações analíticas (CSV/BI).
  
 [Arquitetura do Projeto](image.png)
-- `docs/Prints/Arquitetura_Projeto.png`  
-  *Figura 1 – Arquitetura geral do SPTrans Lakehouse Analytics.*
+*Figura 1 – Arquitetura geral do SPTrans Lakehouse Analytics.*  
+(Arquivo: `docs/prints/Arquitetura_Projeto.png`)
 
+---
 
 ## 3. Ingestão de Dados (Apache NiFi)
 
@@ -35,10 +36,12 @@ O fluxo principal é composto pelos seguintes processadores:
 | `PutS3Object (Bronze)` - Grava JSON consolidado em `lake/bronze/sptrans_posicoes/` - Saída: Arquivo estruturado |
 
 ![Fluxo do NiFi](NiFi_Flow.png)
-- `docs/prints/nifi_flow.png` – *Fluxo NiFi completo mostrando os processadores.*
+*Fluxo NiFi completo mostrando os processadores.*  
+(Arquivo: `docs/prints/nifi_flow.png`)
 
 ![NiFi - Config do PutS3Object (raw)](NiFi_puts3_config.png)
-- `docs/prints/nifi_puts3_config.png` – *Exemplo da Configuração do PutS3Object (raw) apontando para o bucket MinIO.*
+*Exemplo da configuração do PutS3Object (raw) apontando para o bucket MinIO.*  
+(Arquivo: `docs/prints/nifi_puts3_config.png`)
 
 ### 3.2 Estrutura no MinIO
 
@@ -70,52 +73,116 @@ Cada pasta representa uma camada lógica de maturidade dos dados:
   Finalidade: Indicadores e KPIs consolidados. |
 
 ![Bucket 'Lake'](MiniO_bucket.png)
-- `docs/prints/minio_bucket.png` – *Visualização do bucket `lake` no painel do MinIO com as pastas Raw, Bronze, Silver, Gold.*
+Visualização do bucket lake no painel do MinIO com as pastas Raw, Bronze, GTFS, Silver e Gold.
+(Arquivo: `docs/prints/minio_bucket.png`)
 
+---
 
 ## 4. Preparação das Camadas Silver e Gold
 
 ### 4.1 Criação da camada Silver (tratamento e normalização)
 
-A camada Silver tem como objetivo estruturar os JSONs vindos do Bronze, extraindo cada veículo e seus atributos (linha, horário, latitude, longitude etc.).
+A camada Silver tem como objetivo transformar os dados da Bronze em um formato tabular adequado para análise, extraindo cada veículo, linha, posição geográfica e horário de referência.
 
-O processo foi feito em duas etapas:
+O processo foi estruturado em dois elementos principais:
 
-1. View lógica de transformação (vw_sptrans_posicoes_flat)** – realiza o *flatten* do JSON.  
-2. Tabela física (sptrans_posicoes_flat)** – materializa os dados tratados para otimizar consultas.
+1. View lógica (`vw_sptrans_posicoes_flat`)  
+   Responsável por aplicar o *flatten* do JSON da Bronze, convertendo a estrutura aninhada em linhas e colunas.
 
-Script SQL:
-`sql/create_views_silver.sql`
+2. Tabela física (`sptrans_posicoes_flat`)
+   Responsável por armazenar, de forma materializada, os dados já tratados, facilitando consultas recorrentes.
 
-![Tabela Silver](trino_silver_flat.png)
-- `docs/prints/trino_silver_flat.png` – *Consulta à view Silver mostrando os dados.*
+A carga da tabela física é executada por meio do script:
 
-O carregamento da Silver física é executado via script:
+- `scripts/refresh_silver.ps1` – que chama o Trino via Docker e insere na tabela Silver os dados retornados pela view lógica.
 
-- Powershell
-#cd C:\Users\victo\projetos\sptrans-tcc
-#powershell -ExecutionPolicy Bypass -File .\scripts\refresh_silver.ps1
-
-O script `refresh_silver.ps1` executa dentro do container do Trino um comando `INSERT INTO ... SELECT FROM vw_sptrans_posicoes_flat`, materializando os dados tratados na tabela física `hive.
-silver.sptrans_posicoes_flat`.  
-
-Esse processo simula a automação de um job recorrente (por exemplo, via agendador do sistema operacional ou ferramenta de orquestração), garantindo que a camada Silver esteja sempre atualizada 
-a partir dos dados coletados pelo NiFi.
+Esse processo simula a automação de um job recorrente (por exemplo, via agendador do sistema operacional ou ferramenta de orquestração), garantindo que a camada Silver seja atualizada a partir dos dados coletados pelo NiFi.
 
 ![Refresh Silver](powershell_refresh_silver.png)
-- `docs/prints/powershell_refresh_silver.png` – *Execução do script `refresh_silver.ps1` com a mensagem `INSERT: XXXX rows`.*
+*Execução do script `refresh_silver.ps1` com inserção de registros na tabela Silver.*  
+(Arquivo: `docs/prints/powershell_refresh_silver.png`)
 
+Arquivos relacionados:
+- `sql/create_views_silver.sql` – definição da view Silver lógica.
+- `scripts/refresh_silver.ps1` – materialização da Silver física.
 
 ### 4.2 Integração com GTFS (enriquecimento da Silver)
 
-Para complementar as informações da API Olho Vivo com dados estáticos de referência (nome das linhas, descrição das rotas, tipo de serviço), foi utilizada a base GTFS disponibilizada pela 
-SPTrans.
+Para enriquecer as informações operacionais da API Olho Vivo com metadados de linhas e rotas, foi utilizada a base GTFS disponibilizada pela SPTrans.
 
-Passos executados:
+Etapas principais:
 
-1. Download do pacote GTFS no portal da SPTrans.
-2. Extração do arquivo `routes.txt`.
-3. Upload do arquivo para o caminho:
+1. Download do pacote GTFS e envio do arquivo `routes.txt` para `lake/gtfs/routes/`.
+2. Criação da tabela externa `hive.silver_gtfs.routes` a partir do arquivo `routes.txt`.
+3. Criação da view `hive.silver.vw_sptrans_posicoes_enriquecida`, que realiza o join entre:
+   - a tabela física `hive.silver.sptrans_posicoes_flat` (posições dos veículos)
+   - e a tabela `hive.silver_gtfs.routes` (metadados das linhas).
 
-   ```text
-   lake/gtfs/routes/routes.txt
+Essa view passa a expor, além das informações operacionais, o nome da linha, descrição da rota e demais atributos relevantes para análise.
+
+Arquivos relacionados:
+- `sql/create_views_silver.sql` – criação da tabela GTFS e da view enriquecida.
+- `docs/prints/trino_silver_enriquecida.png` – exemplo da view enriquecida em consulta.
+
+---
+
+## 5. Camada Gold (Visões Analíticas)
+
+A camada Gold consolida as principais regras de negócio sobre os dados já enriquecidos, expondo visões analíticas que podem ser consumidas diretamente por usuários, relatórios ou ferramentas de BI.
+
+Duas views principais foram definidas:
+
+1. `hive.gold.vw_sptrans_posicoes_ultimas` 
+   Retorna, para cada combinação de linha e veículo, apenas a última posição registrada na base, permitindo analisar o “estado mais recente” da frota na janela coletada.
+
+2. `hive.gold.vw_sptrans_linha_resumo`  
+   Gera um resumo por linha, incluindo:
+   - quantidade de veículos distintos observados,
+   - número total de registros,
+   - primeira e última posição registradas.
+
+Essas visões simplificam o consumo de informações e servem como base direta para construção de KPIs e dashboards.
+
+Arquivos relacionados:
+- `sql/create_views_gold.sql` – contém as definições das views da camada Gold.
+
+![Trino_gold_resumo](trino_gold_resumo.png)
+- `docs/prints/trino_gold_resumo.png` – resultado da view `vw_sptrans_linha_resumo`.
+
+
+## 6. Consultas Analíticas (Exemplos de KPIs)
+
+Com as views da camada Gold (e a view Silver enriquecida), foram definidas consultas analíticas para ilustrar como o lakehouse suporta indicadores de operação da frota.
+
+Os principais KPIs definidos foram:
+
+1. KPI 1 – Frota atual por linha  
+   Utiliza a view `vw_sptrans_posicoes_ultimas` para identificar, na última leitura disponível, quais linhas possuem maior quantidade de veículos em operação.
+
+2. KPI 2 – Linhas com maior número de veículos distintos 
+   Baseado na view `vw_sptrans_linha_resumo`, identifica as linhas que apresentaram maior diversidade de veículos ao longo do período analisado, refletindo o porte e a intensidade da operação.
+
+3. KPI 3 – Evolução temporal de veículos distintos  
+   Utiliza a view `vw_sptrans_posicoes_enriquecida` para analisar como a quantidade de veículos distintos varia por data e por horário de referência, permitindo observar padrões de demanda e oferta na amostra coletada.
+
+Essas consultas demonstram, de forma prática, o valor da arquitetura proposta, conectando:
+
+- dados brutos da API,  
+- enriquecimento com GTFS,  
+- organização em camadas,  
+- e geração de métricas acionáveis.
+
+
+Arquivos relacionados:
+- `sql/queries_kpi.sql` – contém todas as consultas analíticas utilizadas para os KPIs.
+
+![KPI Frota por Linha](trino_kpi_frota_por_linha.png)
+- `docs/prints/trino_kpi_frota_por_linha.png` – KPI 1.
+
+![KPI Top Linhas](trino_kpi_top_linhas.png)
+- `docs/prints/trino_kpi_top_linhas.png` – KPI 2.
+
+![KPI Evolucao Temporal](trino_kpi_evolucao_temporal_veiculos.png)
+- `docs/prints/trino_kpi_evolucao_temporal_veiculos.png` – KPI 3.
+
+
