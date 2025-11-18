@@ -73,7 +73,7 @@ Descrição do Pipeline disponível em:
 [`docs/demo.md`](docs/demo.md).
 
 
-## 👨‍💻 Autor
+## Autor
 
 Victor André Andia Arana
 MBA em Analytics & Big Data – Engenharia de Dados
